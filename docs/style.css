@@ -59,8 +59,8 @@ section.item-output {
   min-height: 30px; 
   border-top:1px dotted #ded1e0;
   margin-top: 5px;
-  }
 }
+
 section.entry {
   margin-bottom: 5px;
 }
@@ -97,4 +97,10 @@ footer {
 /* site footer paragraph */
 footer p {
   font-size: 0.8em;
+}
+.float-right {
+  float:right;
+}
+.inline {
+    display: inline;
 }
