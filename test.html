@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<!-- header goes here-->
+		<header>
+			<h3>Purchases List</h3>
+			<p>Keep track of your purchases here:</p>
+		</header>
+		<!--document main-->
+		<main>
+			<!--purchase input-->
+			<section class="entry">
+				<h5>add purchase</h5>
+				Item name: <input id = "item-name"></div>
+				Item value: <input id = "item-value" type = "numbers"></div>
+				<button>add</button>
+			</section>
+			<!--delete purchases-->
+			<section class="item-controls">
+			<button id="items-delete">Delete All</button>
+			</section>
+			<!--purchase output-->
+			<section class="item-output"></section>
+			<!--Total price of the current list of items-->
+			<section class="total-price">
+				<p id='totalPrice'></p>
+			</section>
+		</main>
+		<!--document footer-->
+		<footer>
+			<p> additional stuff </p>
+		</footer>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+	</body>
+</html>

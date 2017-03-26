@@ -1,0 +1,100 @@
+body {
+  width: 70%;
+  margin: auto;
+  background: #fcfbfc;
+  font-size: 15px;
+  font-family: "Courier New", Georgia, Serif;
+}
+/* heading 3 */
+h3 {
+  font-size: 1.75em;
+}
+/* heading 5 */
+h5 {
+  font-size: 1.25em;
+  margin: 10px 0 10px 0;
+}
+/* site header */
+header {
+  border-bottom: 1px solid #9973A1;
+}
+/* site header paragraph */
+header p {
+  font-size: 1.25em;
+  font-style: italic;
+  color: #cc00cc;
+}
+/* site main content category */
+main {
+  overflow: auto;
+  padding: 15px 0 15px 0;
+  background-color: #fdfcfd;
+  border-radius: 4px;
+}
+/* default button style */
+button {
+  padding: 2px;
+  margin: 2px;
+  border-radius: 2px;
+  border: 1px solid #dedede;
+  cursor: pointer;
+}
+/* default button hover style */
+button:hover {
+  background-color: #aaa;
+  color: #fff;
+    font-family: "Courier New";
+}
+/* input field for note */
+.item-input input {
+  width: 40%;
+}
+/* note controls */
+.item-controls {
+  width: 70%;
+  display: none;
+}
+
+section.item-output {
+  min-height: 30px; 
+  border-top:1px dotted #ded1e0;
+  margin-top: 5px;
+  }
+}
+section.entry {
+  margin-bottom: 5px;
+}
+/* note paragraph output */
+.item-output p {
+  margin: 10px;
+  padding: 10px;
+  cursor:pointer;
+}
+/* note paragraph output hover */
+.item-output p:hover {
+  border: 1px solid #932793;
+  border-radius: 3px;
+}
+/* note delete button */
+.item-output p button.item-delete {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 0;
+  border: 1px solid #dedede;
+  cursor: pointer;
+}
+
+.total-price {
+  border-top: 1px dotted #ded1e0;
+  vertical-align: text-bottom; 
+}
+/* site footer */
+footer {
+  margin-top: 5px;
+  border-top: 1px solid #9973A1;
+}
+/* site footer paragraph */
+footer p {
+  font-size: 0.8em;
+}
