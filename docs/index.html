@@ -9,8 +9,31 @@
 <h1>Purple</h1>
 <div>
     <h5 class="inline">Find out where your money goes!</h5>
-    <button class="float-right" onclick="document.getElementByID('login01').style.display='block'"> Login</button>
+    <button onclick="showLogin()" class="float-right" style="width:auto;"> Login</button>
+    <div id="login01" class="modal" >
+        <div class="modal-content">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enger Username" name="uname" required>
+            <label><b>Password</b></label>
+            <input type="text" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+
+            <!-- Google Login-->
+            <script src="https://apis.google.com/js/platform.js" async defer></script>
+            <meta name="google-signin-client_id" content="17667259232-7cjv5kk2e9bo5tdkmjtiraopp4vbrb66.apps.googleusercontent.com">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+    </div>
 </div>
+<script>
+    function showLogin(){
+        var modal =document.getElementById('login01');
+        modal.style.display = 'block';
+    }
+
+</script>
+
 <br>
 <hr>
 
