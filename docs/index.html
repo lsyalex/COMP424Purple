@@ -11,27 +11,38 @@
     <h5 class="inline">Find out where your money goes!</h5>
     <button onclick="showLogin()" class="float-right" style="width:auto;"> Login</button>
     <div id="login01" class="modal" >
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('login01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
         <div class="modal-content">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-            <label><b>Password</b></label>
-            <input type="text" placeholder="Enter Password" name="psw" required>
-            <button type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
+                <div><img src="Images/Logo.png"</div><br>
+                <label><b>Username: </b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required><br>
+                <label><b>Password: </b></label>
+                <input type="text" placeholder="Enter Password" name="psw" required><br>
+                <button type="submit">Login</button><br>
+                <input type="checkbox" checked="checked"> Remember me
+                <a href="Pwdrecovery.html">Forget Password</a><br>
+
 
             <!-- Google Login-->
             <script src="https://apis.google.com/js/platform.js" async defer></script>
             <meta name="google-signin-client_id" content="17667259232-7cjv5kk2e9bo5tdkmjtiraopp4vbrb66.apps.googleusercontent.com">
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div class="g-signin2" data-onsuccess="onSignIn" style="text-align: center"></div>
         </div>
     </div>
 </div>
 <script>
+    var modal =document.getElementById('login01');
     function showLogin(){
-        var modal =document.getElementById('login01');
         modal.style.display = 'block';
     }
-
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 
 <br>
